@@ -1,0 +1,59 @@
+div{
+		display:flex;
+		flex-wrap: wrap;
+		border:solid;
+	}
+	#dog{margin: 80px;
+	     height: 300px;
+	     width: 300px;
+	    justify-content: center;
+	    align-items: center;
+         flex:1;
+         background-color: lightgreen;
+	}
+	#cat{
+		margin: 80px;
+	     height: 300px;
+	     width: 300px;
+	    justify-content: center;
+	    align-items: center;	
+	    background-color: lightgreen;
+	}
+	#horse{
+		margin: 80px;
+	     height: 300px;
+	     width: 300px;
+	    justify-content: center;
+	    align-items: center;
+	    background-color: lightgreen;	
+	}
+	#tiger{
+		margin: 80px;
+	     height: 300px;
+	     width: 300px;
+	    justify-content: center;
+	    align-items: center;
+	    flex:1;	
+	    background-color: lightgreen;
+		
+	}	
+	#formbox{display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	form{
+		height: 100px;
+		width: 200px;
+		color: black ;
+		border:solid;
+	    margin: 20px;
+		padding: 20px;
+		background-color: orange;	
+	}
+	footer{
+	    display:flex;
+		flex-wrap: wrap;
+		border:solid;
+		justify-content: center;
+	}

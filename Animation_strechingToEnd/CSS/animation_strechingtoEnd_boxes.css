@@ -1,0 +1,46 @@
+#first{
+			height: 150px;
+			width: 100px;
+			background-color: red;
+			margin:20px;
+
+			animation: firstmove 1s linear alternate 1s infinite;
+		}
+		#second{
+			height: 150px;
+			width: 100px;
+			background-color: blue;
+			margin:20px;
+			animation: secondmove 3s linear alternate 1s infinite;
+		}
+
+
+			@keyframes firstmove {
+				0%{
+					background-color: red;
+					width: 100px;
+				}
+				100%{
+					background-color: red;
+					width: 300px;
+				}
+
+				0%{
+					background-color: red;
+					width: 100px;
+				}
+			}
+
+			@keyframes secondmove {
+				0%{
+					background-color: blue;
+					width: 100px
+				}
+				100%{
+					background-color: blue;
+					width: 300px;
+				}
+				0%{
+					background-color: blue;
+					width: 100px;}
+				}

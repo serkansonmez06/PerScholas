@@ -1,0 +1,36 @@
+body{
+	width: 900px;
+	height: 800px; border:solid;border-color:
+	lightgreen;display: flex;flex-direction: column;
+    }
+
+#red{
+	height: 405px; width: 894px;display:flex; border:solid;border-color:red;
+
+    }
+
+
+nav{
+	min-height: 396px;min-width: 890px; 
+	border:solid;border-color: green;
+    display:flex;flex-wrap:wrap;flex-direction: column;
+   }
+
+  a{
+  	border:solid;border-color: orange;margin:10px;
+   }
+
+  a{
+  	width: 30px;
+    height: 20px;
+	background-color: red;
+	animation: myHManimation 3s ease-in-out 0s normal forwards; 
+    }
+   @keyframes myHManimation{
+   0%{background-color: yellow;height: 10px; width: 15px;}50%{background-color: red;height: 20px; width: 40px;}70%{background-color: orange;height:20px; width: 60px}100%{background-color: brown;height: 20px; width:80px;}
+   }
+   #yellow{
+   	       height: 200px;width: 894px; border:solid;border-color:yellow;display:flex;flex-direction: row;align-content:stretch;}
+	.boxes{
+	 border:solid; border-color: pink; min-height: 61px;min-width:80px;
+	}
