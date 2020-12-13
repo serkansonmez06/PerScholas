@@ -10,7 +10,7 @@ class Circle {//create class with attributes and instantiate
     get area(){ //The get syntax binds an object property to a function that will be called when that property is looked up.
     return this.calcArea();
   }
-  calcArea(){//formula of rectangle area
+  calcArea(){//formula of rectangle area/ method
     return this.pi*this.radious*this.radious;
   }
   total_sides(sides){ //method for sides
