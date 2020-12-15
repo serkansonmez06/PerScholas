@@ -108,8 +108,8 @@ console.log(increaseByTwo); // -> should print [3, 4, 5, 6, 7];
 //  Be able to call vendingMachine.vend() with a valid integer to return a snack
 
 /*solution*/
-const vendingMachine = { //create arrays with contains three elements with name: , and price:
-  snacks: [
+const vendingMachine = { //create arrays contains three elements with name: , and price:
+  snacks: [ //this is not an object! it is map data structure
     {
       name : 'cookie',
       price : 3,
@@ -123,9 +123,26 @@ const vendingMachine = { //create arrays with contains three elements with name:
       price : 5,
     }
   ],
-  vend (input){ // create function it takes input as index of snacks array
+  vend (input){ // method => it takes input as index of snacks array
 
-    console.log(vendingMachine.snacks[input]);
+    return (vendingMachine.snacks[input]);//has to return to vend method
   }// index of snacks
 };
-vendingMachine.vend(0); //print index of vendingMachine with function vend index of 0,1,2
+console.log(vendingMachine.vend(0)); //print index of vendingMachine with method vend index of 0,1,2
+/******* second solution with class ********************/
+//vending machine
+
+class VendingMachine {
+    constructor(name, price) {
+      this.name = name;
+      this.price = price;
+    }
+    vend(x) {
+      return `You bought ${this.name[x]}` + ` for ${this.price[x]}.`;// method
+    }
+}
+ const vendingMachine = new VendingMachine(
+['Candy', 'Pop', 'chips'],
+  [2,4,3]
+);//arrays with name and price
+console.log(vendingMachine.vend(0));
