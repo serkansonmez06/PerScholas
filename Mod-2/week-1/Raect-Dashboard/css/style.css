@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    background-color: rgb(228, 221, 221);
+}
+
+.container>div {
+    /* main component */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* created 4 colums */
+    /*create 4 colums with same fraction*/
+    grid-auto-rows: 250px;
+    /* size of the rows*/
+    grid-gap: 30px;
+    grid-auto-flow: dense;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.SideBar {
+    background-color: rgb(213, 208, 208);
+    grid-row: span 3;
+    /* span helped comnine row together- 3 means it combines 3 rows and built one row*/
+    grid-column: span 1;
+    /*just one column -- span makes easy to combine grid box*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.Reviews {
+    background-color: rgba(0, 0, 0, 0.3);
+    grid-column: span 1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin: -10px;
+}
+
+.AverageRating {
+    background-color: rgba(0, 0, 0, 0.3);
+    grid-column: span 1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin: -10px;
+}
+
+.SentimentsAnalysis {
+    background-color: rgba(0, 0, 0, 0.3);
+    grid-column: span 1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin: -10px;
+}
+
+.WebsiteVisitors {
+    background-color: rgba(0, 0, 0, 0.3);
+    grid-row: span 2;
+    grid-column: span 3;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: left;
+    margin: -10px;
+}
+
+.WebsiteVisitorSubCom {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 65%;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    background-image: url("../image/chart.png");
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(68, 68, 145);
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: midnightblue;
+}
+
+h1 {
+    color: olivedrab;
+    background-color: palegreen;
+}
+
+.plus {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    border-radius: 10%;
+    border-style: solid;
+    height: 40px;
+    width: 30px;
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column: span 1;
+    }
+}
