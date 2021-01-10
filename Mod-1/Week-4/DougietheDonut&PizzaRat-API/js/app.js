@@ -46,10 +46,7 @@ $(() => { //jquery document ready func
                     }
                 }
             },
-            () => {
-                // Output a bad request
-                console.log('Bad Request');
-            }
+            () => {}
         );
     });
 });
