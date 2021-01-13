@@ -1,4 +1,4 @@
 # PerScholas
 
 Intensive Software Engineer Class - 2020.
-There will be course exercise, homework and some materials!
+There are course exercises, and homeworks in this repository!
