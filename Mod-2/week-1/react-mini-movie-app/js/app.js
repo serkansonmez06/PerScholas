@@ -13,7 +13,7 @@ class App extends React.Component { // render App component
        }
 
        handleChange = (event)=>{ 
-           this.setState({ [event.target.id]: event.target.value}) //it keep inputs there
+           this.setState({ [event.target.id]: event.target.value}) // it gets input value
        }
 
        handleSubmit = (event) => { // it prevents keep refreshing react! 
@@ -25,11 +25,11 @@ class App extends React.Component { // render App component
 
             fetch(this.state.searchURL) // is a function and takes only one argument. must be object
             .then(response =>  response.json())//takes two callback function
-            .then(json =>{
+            .then(json =>{  // response and json are parameters
                 // console.log(json)
                 this.setState({
-                movie: json,
-                movieTitle:''
+                movie: json,   // gets json file
+                movieTitle:'' //// it keeps input empty for user
             }),
             ()=> console.log(err)
             })
