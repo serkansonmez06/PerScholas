@@ -1,0 +1,2 @@
+module mornigLabAndAfternoonLab {
+}
